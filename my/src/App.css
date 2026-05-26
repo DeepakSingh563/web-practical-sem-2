@@ -1,0 +1,29 @@
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.count{
+    color: blue;
+    font-size: 50px;
+}
+
+button{
+    background-color: aqua;
+    color: red;
+    border: 3px solid green;
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: lightgreen;
+}
