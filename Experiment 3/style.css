@@ -1,0 +1,23 @@
+/* Custom Styling */
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Smooth Hover Effect */
+button{
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+/* Card Hover */
+div.shadow-md{
+    transition: 0.3s;
+}
+
+div.shadow-md:hover{
+    transform: translateY(-8px);
+}
