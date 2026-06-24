@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Largest Number Finder</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .container {
+            width: 350px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+       
+
+        #result {
+            color: green;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Largest of 5 Numbers</h2>
+
+        <button id="cal">Find Largest</button>
+
+        <h3 id="result">Result = </h3>
+    </div>
+
+    <script>
+
+        const cal = document.getElementById("cal");
+        const result = document.getElementById("result");
+
+        cal.addEventListener("click", function () {
+
+            let a = Number(prompt("Enter First Number"));
+            let b = Number(prompt("Enter Second Number"));
+            let c = Number(prompt("Enter Third Number"));
+            let d = Number(prompt("Enter Fourth Number"));
+            let e = Number(prompt("Enter Fifth Number"));
+
+            let max = a;
+
+            if (b > max)
+             max = b;
+
+            if (c > max) 
+            max = c;
+
+            if (d > max)
+             max = d;
+
+            if (e > max)
+             max = e;
+
+            result.innerText = "Largest Number = " + max;
+
+        });
+
+    </script>
+
+</body>
+
+</html>
